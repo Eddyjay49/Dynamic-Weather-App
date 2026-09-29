@@ -18,6 +18,7 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #fff;
      margin: auto 0;
+     background-color:  #082077;
 }
 
 
@@ -30,6 +31,7 @@ body {
     min-height: 400px;
     padding: 2rem;
     border-radius: 2.5rem;
+    border: 1px solid #c0c8dc;
     background:
     linear-gradient( 135deg,#0d1c42, #101d4d);
 }
@@ -115,8 +117,9 @@ body {
     line-height: 1;
 }
 
-.temperature strong {
+.my {
     font-size: 1.5rem;
+    opacity: 0;
 }
 
 .temperature p {
@@ -138,11 +141,14 @@ body {
     color: #d2d8e8;
 }
 
-.weather-details strong {
+.myStrong {
     color: #fff;
+    opacity: 0;
 }
 
-
+.active{
+    opacity: 1;
+}
 
 /* FORECAST */
 .forecast {

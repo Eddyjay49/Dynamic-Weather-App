@@ -19,6 +19,8 @@ const date = document.getElementById("date");
 
 const searchBox = document.querySelector(".search-box");
 
+const myStrongs = document.querySelectorAll(".myStrong")
+
 
 
 
@@ -28,13 +30,15 @@ searchBox.addEventListener("submit", (e) => {
     e.preventDefault();
 
     // checking if input is empty
-    const cityName = input.value;
+    const cityName = input.value.trim();
     if (cityName === "") {
         alert("Please, enter a city name");
         return;
     }
 
-    getWeather(cityName)
+    // getweather
+    getWeather(cityName);
+
 });
 
 
@@ -105,10 +109,15 @@ const getWeather = async function (cityName) {
 
     // DAILY/WEEK DAYS
     const daily = weatherData.daily;
-    showForecast(daily);
+        showForecast(daily);
+       
+            // active class
+    myStrongs.forEach((myStrong) => {
+       myStrong.classList.add("active")
+   })
     }
     catch (error) {
-        consolog.log(erro)
+        consolog.log(error)
     }
     finally {
         
