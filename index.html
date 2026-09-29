@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="query.css">
+</head>
+
+<body>
+
+    <main class="weather-app">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <!-- City and Date -->
+            <div>
+                <h1 id="city">CityName</h1>
+                <p id="date">
+                    Date|Time
+                </p>
+            </div>
+
+            <!-- Search Form -->
+            <form class="search-box">
+                <input id="input" type="text" placeholder="Enter city name">
+                <button id="search-btn" type="submit">Search</button>
+            </form>
+
+        </header>
+
+
+        <!-- == CURRENT WEATHER == -->
+        <section class="current-weather">
+            <!-- Temperature and Condition -->
+            <div class="temperature">
+                <!-- <h2>Temperature</h2> -->
+                <span id="temperature"></span>
+                <div>
+                    <strong>°C</strong>
+                    <p id="condition">
+                        <!-- Partly cloudy -->
+                    </p>
+                </div>
+            </div>
+
+            <!-- Weather Icon -->
+            <div id="weather-icon" class="weather-icon">
+                ☁️
+            </div>
+
+            <!-- Weather Details -->
+            <div class="weather-details">
+                <p>
+                    🌡️ <strong>Feels like:</strong>
+                    <span id="feels-like"></span>
+                </p>
+                <p>
+                    💧 <strong>Humidity:</strong>
+                    <span id="humidity"></span>
+                </p>
+                <p>
+                    💨 <strong>Wind:</strong>
+                    <span id="wind"></span>
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- ===FIVE-DAY FORECAST=== -->
+             
+        <section class="forecast"> 
+            
+            
+            <!-- Day 1 -->
+            <article class="forecast-card">
+                <p id="day1" class="day">  </p>
+                <div id="icon1" class="forecast-icon">  </div>
+                <h3 id="temp1">  </h3>
+                <p id="condition1" class="forecast-condition">  </p>
+            </article> 
+
+            <!-- Day 2 -->
+            <article class="forecast-card">
+                <p id="day2" class="day">  </p>
+                <div id="icon2" class="forecast-icon"> </div>
+                <h3 id="temp2">  </h3>
+                <p id="condition2" class="forecast-condition">  </p>
+            </article>
+
+             <!-- Day 3 -->
+            <article class="forecast-card">
+                <p id="day3" class="day">  </p>
+                <div id="icon3" class="forecast-icon"> </div>
+                <!-- <h3 id="temp3"> 25° / 17° </h3> -->
+                <h3 id="temp3"> </h3>
+                <p id="condition3" class="forecast-condition"> </p>
+            </article> 
+
+            <!-- Day 4 -->
+            <article class="forecast-card">
+                <p id="day4" class="day"> </p>
+                <div id="icon4" class="forecast-icon">  </div>
+                <h3 id="temp4">  </h3>
+                <p id="condition4" class="forecast-condition">  </p>
+            </article> 
+
+            <!-- Day 5 -->
+            <article class="forecast-card">
+                <p id="day5" class="day">  </p>
+                <div id="icon5" class="forecast-icon">  </div>
+                <h3 id="temp5">  </h3>
+                <p id="condition5" class="forecast-condition">  </p>
+            </article>
+
+            
+        </section>
+
+    </main>
+
+    <!-- javascripts -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+
+
+/* Media query */
+/* MOBILE — 576px */
+@media (max-width: 36rem) {
+/* header */
+    .header h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-top: -0.2rem;
+}
+
+/* search */
+.search-box {
+    gap: 0.7rem;
+    margin-top: 0.5rem;
+}
+
+.search-box input {
+    width: 20rem;
+}
+
+.search-box button{
+    padding: 1.1rem 1.8rem;
+}
+
+
+/* Weather conditions */
+.temperature {
+    gap: 1rem;
+}
+
+.temperature span {
+    font-size: 6rem;
+}
+
+.temperature strong {
+    font-size: 1.3rem;
+}
+
+.temperature p {
+    font-size: 1.2rem;
+}
+
+.current-weather {
+    margin-top: 2.5rem;
+}
+
+
+/* Weather icon */
+.weather-icon {
+    font-size: 7rem;
+}
+
+.weather-details {
+    font-size: 1.1rem;
+}
+
+/* forecast */
+.forecast-card {
+    padding: 0.7rem;
+    
+}
+
+.forecast-card .day {
+    font-size: 0.8rem;
+    color: #c3cadc;
+}
+
+.forecast-icon {
+    font-size: 3rem;
+    /* margin: 1.1rem 0; */
+    /* margin: 0%; */
+}
+
+.forecast-card h3 {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.forecast-condition {
+    font-size: 0.8rem;
+}
+
+.forecast{
+    margin-top: 4rem;
+}
+
+}
