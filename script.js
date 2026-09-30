@@ -142,7 +142,7 @@ function getWeatherCondition(code) {
     }else if (code >= 80 && code <= 82) {
         return "Rain showers";
     }else if (code >= 95) {
-        return "Thunderstorm";
+        return "Thunder storm";
     }else {
         return "Unknown";
     }
@@ -177,7 +177,7 @@ function showForecast(daily) {
         //Take the date I received from the API and turn it into something JavaScript can work with as a date.
         const day = new Date(daily.time[i]);
         //Take this Date object and tell me the full name of the weekday
-        const dayName = day.toLocaleDateString("en-US", { weekday: "long" })
+        const dayName = day.toLocaleDateString("en-US", { weekday: "short" })
         // Update day1, day2, day3, etc. with the actual day name from the API
         document.getElementById("day" + (i + 1)).textContent = dayName;
 

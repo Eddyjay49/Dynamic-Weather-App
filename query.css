@@ -65,22 +65,18 @@
 /* forecast */
 .forecast-card {
     padding-right: 1.5rem;
-    /* padding: 0.9rem; */
     min-width: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .forecast-card .day {
     text-align: start;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #c3cadc;
-    overflow-x: none;
 }
 
 .forecast-icon {
     font-size: 2.5rem;
-    /* margin: 1.1rem 0; */
-    /* margin: 0%; */
 }
 
 .forecast-card h3 {
@@ -94,6 +90,24 @@
 
 .forecast{
     margin-top: 4rem;
+}
+
+}
+
+/* 372pixels */
+@media (max-width: 24rem) {
+
+    .forecast-icon {
+    font-size: 2rem;
+}
+
+ .forecast-card h3 {
+    font-size: 0.5rem;
+    font-weight: 300;
+}
+
+.forecast-condition {
+    font-size: 0.7rem;
 }
 
 }
